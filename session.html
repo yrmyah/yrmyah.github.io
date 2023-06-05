@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>x-session-manager</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="resources/style.css" />
+</head>
+<body>
+<div class="navbar">
+<p><a id="haut"></a> <a href="napasrc.html">A casa</a> / En mode léger</p>
+</div>
+<h1 id="x-session-manager"><u>x-session-manager</u></h1>
+<p><br />
+</p>
+<p>    Pour rester léger, je n’utilise pas de gestionnaire de session graphique comme <em>lightm</em> ou <em>gdm</em>. Au démarrage de la <strong>debian</strong> je me retrouve donc sur le prompt.  Après avoir entré son login et mot de passe, pour lancer le serveur d’affichage X11 on utilise la commande <code>startx</code> , le bureau ou gestionnaire de fenêtre par défaut se lance.<br />
+</p>
+<p><em>Comment choisir un bureau ou gestionnaire de fenêtre quand on a pas de gestionnaire de session graphique?</em><br />
+</p>
+<p>    Sous <strong>debian</strong> on peut utiliser la commande <code>sudo update-alternatives --config x-session-manager</code>, qui permet de choisir un autre <em>wm</em>. La commande étant un peu longue, on peut créer un <strong>alias</strong> dans <code>.bashrc</code> du genre: <code>alias chxsm="sudo update-alternatives --config x-session-manager"</code>.<br />
+    Cependant, quand on installe des gestionnaires de fenêtre depuis les sources, on les retrouve pas dans la liste générée par la commande citée plus haut. Il convient alors de modifier un fichier <strong>x-session-manager</strong> qui se trouve dans <code>/var/lib/dpkg/alternatives</code>.<br />
+</p>
+<pre><code>manual
+/usr/bin/x-session-manager
+x-session-manager.1.gz
+/usr/share/man/man1/x-session-manager.1.gz
+
+/usr/bin/lwm
+70
+/usr/share/man/man1/lwm.1.gz
+/usr/bin/spectrwm
+40
+/usr/share/man/man1/spectrwm.1.gz
+/usr/local/bin/frankenwm
+80
+/usr/share/man/man1/frankenwm.1.gz
+/usr/local/bin/w9w
+60
+/usr/share/man/man1/w9wm.1.gz
+/usr/local/bin/wmx
+50
+/usr/share/man/man1/wmx.1.gz
+
+</code></pre>
+<h3 id="à-noter">À noter:</h3>
+<ul>
+<li><strong>Les deux espaces en fin de fichier sont importants.</strong></li>
+<li>Il semble important aussi que le chemin des <em>man</em> compressés en <strong><em>.gz</em></strong> soit bien dans <code>/usr/share/man/man1</code>. Et comme une installation depuis les sources installe les <em>man</em> dans <code>/usr/local/man/man1</code>et sans compression, il faut donc les compressez et déplacer dans le chemin cité plus haut.</li>
+</ul>
+<p><br />
+<span class="points">. . . . . . . .</span></p>
+<blockquote>
+<p><a href="#haut">Vers là-bas, en haut ↑</a>  </p>
+</blockquote>
+<p> </p>
+<hr />
+<p><span class="footer"><em>Màj 05 juin 2023 | <a href="napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
+</body>
+</html>

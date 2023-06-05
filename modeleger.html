@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>En mode léger</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="resources/style.css" />
+</head>
+<body>
+<div class="navbar">
+<p><a id="haut"></a> <a href="napasrc.html">A casa</a> / En mode léger</p>
+</div>
+<h1 id="en-mode-léger"><u>En mode léger</u></h1>
+<p><br />
+</p>
+<p>    <em>Dans le genre <b>léger</b>, là on a affaire à du lourd!</em></p>
+<p><img src="resources/feather.gif" id="profile_pic"/>     Plus bas, une liste d’applications que j’utilise, toujours animé par ce souci de légèreté, suivie de quelques informations sur certaines d’entre elles.<br />
+</p>
+<p><em><b>Pourquoi du lourd?</b></em><br />
+</p>
+<p>    parce que bien que légères, car souvent en ligne de commande, les applications de la liste qui suit sont particulièrement puissantes.<br />
+</p>
+<p><a id="liste"></a></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">TYPE</th>
+<th style="text-align: center;">APPLICATION</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Tray/notifier</td>
+<td style="text-align: center;"><a href="#trayer">trayer</a>, dunst</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Lanceur</td>
+<td style="text-align: center;"><a href="#xbindkeys">xbindkeys</a>, launch (de nnn), <a href="#9menu">9menu</a>, dmenu, rofi</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Terminal</td>
+<td style="text-align: center;">lxterminal ou st, couplé au multiplexer <a href="#mtm">mtm</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">FM</td>
+<td style="text-align: center;"><a href="#nnn">nnn</a>, pcmanfm, MC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Ed./Dev.</td>
+<td style="text-align: center;">micro, mousepad, geany, git</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Www</td>
+<td style="text-align: center;">elinks, ddgr, w3m, dillo, luakit, netsurf</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Gopher/Gemini</td>
+<td style="text-align: center;">lynx, bombadillo</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="citation" data-cites="mail">@mail</span></td>
+<td style="text-align: center;">alpine, aerc, gnubiff</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Pix</td>
+<td style="text-align: center;">xsiv, feh, imagemagick, scrot</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Xmedia</td>
+<td style="text-align: center;">mplayer, mpv, xine</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Sic/sound</td>
+<td style="text-align: center;">MOC, pmrp, pamix, alsamixer, qmmp</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Office</td>
+<td style="text-align: center;">micro, markdown/pandoc, wordgrinder, mupdf/zathura, diodon, calcurse, fortune</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Sys. infos/mon.</td>
+<td style="text-align: center;">htop, glances, inxi, nmon, conky</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Disques</td>
+<td style="text-align: center;">duf, ncdu, bashmount, pmount, mtp-tools, jmtps, gvfs, gparted</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Réseau</td>
+<td style="text-align: center;">nmcli/nmtui, gigolo, lftp, rclone, cadaver, wavemon, nast, cbm</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Autres</td>
+<td style="text-align: center;">suckless-tools, sct</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+</p>
+<hr />
+<p><br />
+<a id="trayer"></a></p>
+<h3 id="trayer"><u>trayer :</u></h3>
+<p>Un systray simple et léger utilisable sur les bureaux qui n’en fournissent pas.<br />
+Toute la doc avec <code>man trayer</code>.<br />
+Je l’utilise avec la commande suivante, dans un script de lancement d’applications :<br />
+</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a> <span class="ex">trayer</span> --align center --edge top --transparent true --alpha 0 --tint black --heighttype pixel --height 22 --widthtype request --SetDockType true --SetPartialStrut false <span class="kw">&amp;</span></span></code></pre></div>
+<p><br />
+</p>
+<a href="#liste">Liste ↑</a><br />
+
+<hr />
+<p><br />
+<a id="xbindkeys"></a></p>
+<h3 id="xbindkeys"><u>xbindkeys :</u></h3>
+<p>Comment appelle-t’on cela? Un gestionnaire (et daemon) de raccourcis clavier?<br />
+Très pratique, je l’utilise avec <strong>LWM</strong>, <strong>WMX</strong> et <strong>W9WM</strong>. <a href="resources/.xbindkeysrc">Ici le dotfile</a><br />
+</p>
+<a href="#liste">Liste ↑</a><br />
+
+<hr />
+<p><br />
+<a id="9menu"></a></p>
+<h3 id="menu"><u>9menu :</u></h3>
+<p>Un menu/lanceur simple et configurable, qui n’est pas spécifique à <strong>9wm</strong> ou <strong>w9wm</strong>. Les sous-menus sont possibles.<br />
+Pour l’utiliser, je crée un script que je nomme par exemple <em>9mainmenu.sh</em> :<br />
+</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a> <span class="co">#!/bin/sh </span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a> <span class="ex">9menu</span> -label <span class="st">&quot;MAIN MENU&quot;</span> -warp -popdown -teleport -bg <span class="st">&quot;#1A1A1A&quot;</span> -fg <span class="st">&quot;#7F7F7F&quot;</span> -font <span class="st">&quot;-misc-fixed-medium-r-normal-*-16-*-*-*-*-*-*-*&quot;</span>  -file <span class="st">&quot;~/monmenu.txt&quot;</span> </span></code></pre></div>
+<p><br />
+Qui appelle un simple fichier texte, par exemple <em>monmenu.txt</em> :<br />
+</p>
+<pre><code> BAT         : acpi | dmenu -i -fn &#39;DejaVu Sans Mono-12&#39; -nb &#39;#000000&#39; -nf &#39;#7F7F7F&#39; -sb &#39;#191919&#39; -sf &#39;#7F7F7F&#39; 
+ T42NOTES    : stterm -g 75x40+80+50 -e micro ~/t42notes.txt 
+ MTM         : stterm -e mtm 
+ CAL         : gsimplecal 
+ GEANY       : geany 
+ PCMAMFM     : pcmanfm 
+ LUAKIT      : luakit 
+ SCROT-DELAY : scrotdelay.sh 
+ SCROT-SEL   : scrotsel.sh 
+ ***
+ LOGOUT      : loginctl terminate-session ${XDG_SESSION_ID-} 
+ REBOOT      : systemctl reboot 
+ SHUTDOWN    : systemctl poweroff 
+</code></pre>
+<p><br />
+Et je le lance par un raccourci clavier défini dans <em>.xbindkeysrc</em> :<br />
+</p>
+<pre><code> &quot;9mainmenu.sh&quot; 
+ Mod1 + a </code></pre>
+<p><br />
+</p>
+<a href="#liste">Liste ↑</a><br />
+
+<hr />
+<p><br />
+<a id="mtm"></a></p>
+<h3 id="mtm"><u>mtm :</u></h3>
+<p>Un <strong>M</strong>ultiplexeur de <strong>T</strong>erminal <strong>M</strong>icro, très léger, très simple (et quelque part limité) avec très peu de raccourcis clavier.<br />
+La combinaison de base est Ctrl+g + (touche). Mais cela peut-être modifié avant compilation.<br />
+Ici le <a href="resources/mtm.1">man</a> et la <a href="https://github.com/deadpixi/mtm">Page github</a></p>
+<a href="#liste">Liste ↑</a><br />
+
+<hr />
+<p><br />
+<a id="nnn"></a></p>
+<h3 id="nnn"><u>nnn!!! :</u></h3>
+<p>Un gestionnaire de fichiers, léger, rapide, puissant, configurable … fantastiquement super!<br />
+<a href="https://github.com/jarun/nnn">Page github</a>.<br />
+Ma config dans <a href="resources/nnn.txt"><code>.bashrc</code></a></p>
+<a href="#liste">Liste ↑</a><br />
+
+<hr />
+<p><br />
+<span class="points">. . . . . . . .</span></p>
+<blockquote>
+<p><a href="#haut">Vers là-bas, en haut ↑</a>  </p>
+</blockquote>
+<p> </p>
+<hr />
+<p><span class="footer"><em>Màj 05 juin 2023 | <a href="napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
+</body>
+</html>

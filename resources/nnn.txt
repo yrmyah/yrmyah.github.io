@@ -1,0 +1,21 @@
+# NNN #####################################################
+export NNN_OPENER='nuke'
+export NNN_FIFO='/tmp/nnn.fifo'
+export LC_COLLATE="C"
+export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+export NNN_DE_FILE_MANAGER='ranger'
+export NNN_BMS='h:/home/yirmeyah;b:/usr/local/bin;m:/media;o:/home/yirmeyah/.config/nnn/mounts;u:/mnt;v:/var/www/html'
+#/run/user/$UID/gvfs
+#/run/user/1000/gvfs
+export NNN_USE_EDITOR=1
+export NNN_SHOW_HIDDEN=1
+export NNN_TRASH=1
+export NNN_PLUG='g:mtpmount;m:mocplay;n:nuke;o:fzopen;p:preview-tabbed;s:suedit;t:nmount;u:getplugs;v:imgview;w:preview-tui;x:!chmod +x "$nnn";d:-!&dillo "$nnn"'
+#export NNN_PLUG='x:!chmod +x "$nnn"'
+#export NNN_PLUG='d:-!&dillo "$nnn"'
+#export NNN_FCOLORS="black"
+export NNN_COLORS="4267"
+export NNN_HELP='fortune'
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
+#export NNN_LOCKER='bmon -p wlp2s2'
+export NNN_LOCKER='cmatrix'

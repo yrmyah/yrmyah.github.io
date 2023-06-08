@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="navbar">
-<p><a id="haut"></a> <a href="index.html">A casa</a> / LWM</p>
+<p><a id="haut"></a> <a href="napasrc.html">A casa</a> / LWM</p>
 </div>
 <p><a id="haut"></a></p>
 <h2 id="lwm"><u>LWM</u></h2>
@@ -25,34 +25,35 @@
 </p>
 <!-- [comment]: <a href="resources/lwm.png" target="_blank"><img src="resources/lwm.png" class="thumbnail"></a>-->
 <!-- [comment]:<img src="http://s3-media1.ak.yelpcdn.com/bphoto/sMONYSiLUQEvooJ5hZh0Sw/l.jpg" class="img" alt="" width="200" height="150">-->
-<p><a href="resources/lwm.png"><img src="resources/lwm.png" class="img" alt="Avec des conkys" loading="lazy" ></a> <em>Avec des conkys</em></p>
-<p><br />
+<p><a href="resources/lwm.png"><img src="resources/lwm.png" class="img" alt="Avec des conkys" loading="lazy" ></a> <code>Avec des conkys</code><br />
 </p>
 <p>Qui tourne sur un <strong>IBM Thinkpad T42</strong> avec une <strong>Debian 11 32bits</strong> :</p>
 <ul>
 <li>CPU : 1700Ghz</li>
 <li>RAM: 900 et quelques Mo</li>
-<li>HDD: 40Go</li>
+<li>HDD: 40Go<br />
+</li>
 </ul>
-<p><br />
-</p>
-<p><img src="resources/lwmmem.png" class="img" alt="Usage" loading="lazy" > <em>Usage</em></p>
-<p><br />
+<p><img src="resources/lwmmem.png" class="img" alt="Usage" loading="lazy" > <code>Usage</code><br />
 </p>
 <h3 id="infos-et-description">Infos et description :</h3>
-<p>    La page du créateur est <a href="https://stuff.mit.edu/afs/athena/projet/windowmgr/src/lwm/lwm.html">ici</a>, mais parfois ce lien ne marche pas. Chez Debian c’est dans les dépôts, sinon téléchargeable <a href="http://www.jfc.org.uk/software/lwm.html">ici</a> ou <a href="https://github.com/jamesfcarter/lwm">là</a>.</p>
-<p><br />
+<p>   Avec <strong><em>lwm</em></strong>, pas d’icônes, de barres, boutons, docks, menus, lanceurs etc. Ce sont d’autres programmes qui les fournissent. L’utilisation est simple et bien décrite dans le <a href="https://www.jfc.org.uk/software/lwm-stable.1x.html">man</a>.<br />
+    La page du créateur est <a href="https://stuff.mit.edu/afs/athena/projet/windowmgr/src/lwm/lwm.html">ici</a>, mais parfois ce lien ne marche pas. Chez Debian c’est dans les dépôts, sinon téléchargeable <a href="http://www.jfc.org.uk/software/lwm.html">ici</a> ou <a href="https://github.com/jamesfcarter/lwm">là</a>.<br />
 </p>
-<h3 id="configs-possibles-dans-.xresources">Configs possibles dans .Xresources :</h3>
-<pre>
-! LWM ---------------
+<h3 id="peu-de-configs-possibles-juste-un-peu-dans-.xresources">Peu de configs possibles, juste un peu dans .Xresources :</h3>
+<p>Configuration du lancement d’un menu (9menu) par clic gauche n’importe où sur le bureau.</p>
+<details>
+<summary><code>Exemple, cliquer pour dérouler:</code></summary>
+<pre>  
+! --- LWM ---
 lwm*border: 2
 lwm*titleFont: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
 lwm*popupFont: -misc-fixed-medium-r-normal-*-12-*-*-*-*-*-*-*
-! Avoir un menu par click gauche n importe où sur le bureau 
+! menu par clic gauche 
 lwm*button1: 9mainmenu.sh
 lwm*focus: click
 </pre>
+</details>
 <p><br />
 </p>
 <h3 id="quelques-apps-lights-et-significatives-utilisées-avec">Quelques apps lights et significatives utilisées avec :</h3>
@@ -69,17 +70,17 @@ lwm*focus: click
 <li><strong>Outils :</strong> <em>htop</em>, <em>conky</em>, <em>bashmount</em>, <em>rclone</em>, <em>jmtps</em>, <em>cadaver</em>, <em>nmcli/nmtui</em>, <em>lftp</em>, <em>suckless-tools</em>, <em>sct</em> etc.<br />
 </li>
 </ul>
-<p><a href="resources/lwm2.png"><img src="resources/lwm2.png" class="img" alt="LWM" loading="lazy" ></a> <em>Lxterminal/Mtm, launcher(nnn)</em></p>
-<p><br />
+<p><a href="resources/lwm2.png"><img src="resources/lwm2.png" class="img" alt="LWM" loading="lazy" ></a> <code>Lxterminal/Mtm, launcher(nnn)</code><br />
 </p>
 <p><strong>Plus de détails sur les applications, ici :</strong> <a href="modeleger.html">En mode léger</a></p>
 <p><br />
 <span class="points">. . . . . . . .</span></p>
 <blockquote>
-<p><a href="#haut">Vers là-bas, en haut ↑</a>  </p>
+<p><a href="#haut">Vers là-bas, en haut ↑</a></p>
 </blockquote>
 <p> </p>
+<p> </p>
 <hr />
-<p><span class="footer"><em>Màj 05 juin 2023 | <a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
+<p><span class="footer"><em>Màj 08 juin 2023 | <a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
 </body>
 </html>

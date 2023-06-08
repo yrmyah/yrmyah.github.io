@@ -1,4 +1,4 @@
-# NNN #####################################################
+# --- NNN ---
 export NNN_OPENER='nuke'
 export NNN_FIFO='/tmp/nnn.fifo'
 export LC_COLLATE="C"

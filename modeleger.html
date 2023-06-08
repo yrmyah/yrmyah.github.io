@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="navbar">
-<p><a id="haut"></a> <a href="index.html">A casa</a> / En mode léger</p>
+<p><a id="haut"></a> <a href="napasrc.html">A casa</a> / En mode léger</p>
 </div>
 <h1 id="en-mode-léger"><u>En mode léger</u></h1>
 <p><br />
@@ -125,8 +125,20 @@ Je l’utilise avec la commande suivante, dans un script de lancement d’applic
 <p><br />
 <a id="xbindkeys"></a></p>
 <h3 id="xbindkeys"><u>xbindkeys :</u></h3>
-<p>Comment appelle-t’on cela? Un gestionnaire (et daemon) de raccourcis clavier?<br />
-Très pratique, je l’utilise avec <strong>LWM</strong>, <strong>WMX</strong> et <strong>W9WM</strong>. <a href="resources/xbindkeysrc">Ici le dotfile</a><br />
+Comment appelle-t’on cela? Un gestionnaire (et daemon) de raccourcis clavier?<br />
+Très pratique, je l’utilise avec <strong>LWM</strong>, <strong>WMX</strong> et <strong>W9WM</strong>. Il est lancé dans un <em>autostart</em> et on définit les combinaisons comme cela:<br />
+
+<pre>
+"frankendmenu.sh"
+Mod1 +  F1
+
+"rofi -show run"
+Mod1+shift + F1
+
+"xterm -geometry 30x30 -e /home/yirmeyah/.config/nnn/plugins/launch"
+Mod1 + F10
+</pre>
+<p><br />
 </p>
 <a href="#liste">Liste ↑</a><br />
 
@@ -172,7 +184,7 @@ Et je le lance par un raccourci clavier défini dans <em>.xbindkeysrc</em> :<br 
 <h3 id="mtm"><u>mtm :</u></h3>
 <p>Un <strong>M</strong>ultiplexeur de <strong>T</strong>erminal <strong>M</strong>icro, très léger, très simple (et quelque part limité) avec très peu de raccourcis clavier.<br />
 La combinaison de base est Ctrl+g + (touche). Mais cela peut-être modifié avant compilation.<br />
-Ici le <a href="resources/mtm.1">man</a> et la <a href="https://github.com/deadpixi/mtm">Page github</a></p>
+Ici le <a href="resources/mtm.1">man</a> et la <a href="https://github.com/deadpixi/mtm">Page github</a>.</p>
 <a href="#liste">Liste ↑</a><br />
 
 <hr />
@@ -188,10 +200,11 @@ Ma config dans <a href="resources/nnn.txt"><code>.bashrc</code></a></p>
 <p><br />
 <span class="points">. . . . . . . .</span></p>
 <blockquote>
-<p><a href="#haut">Vers là-bas, en haut ↑</a>  </p>
+<p><a href="#haut">Vers là-bas, en haut ↑</a></p>
 </blockquote>
 <p> </p>
+<p> </p>
 <hr />
-<p><span class="footer"><em>Màj 05 juin 2023 | <a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
+<p><span class="footer"><em>Màj 08 juin 2023 | <a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
 </body>
 </html>

@@ -1,134 +1,124 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>En mode léger</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-  </style>
-  <link rel="stylesheet" href="resources/style.css" />
-</head>
-<body>
-<div class="navbar">
-<p><a id="haut"></a> <a href="napasrc.html">A casa</a> / En mode léger</p>
-</div>
-<h1 id="en-mode-léger"><u>En mode léger</u></h1>
-<p><br />
-</p>
-<p>    <em>Dans le genre <b>léger</b>, là on a affaire à du lourd!</em></p>
-<p><img src="resources/feather.gif" id="profile_pic"/>     Plus bas, une liste d’applications que j’utilise, toujours animé par ce souci de légèreté, suivie de quelques informations sur certaines d’entre elles.<br />
-</p>
-<p><em><b>Pourquoi du lourd?</b></em><br />
-</p>
-<p>    parce que bien que légères, car souvent en ligne de commande, les applications de la liste qui suit sont particulièrement puissantes.<br />
-</p>
-<p><a id="liste"></a></p>
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">TYPE</th>
-<th style="text-align: center;">APPLICATION</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Tray/notifier</td>
-<td style="text-align: center;"><a href="#trayer">trayer</a>, dunst</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Lanceur</td>
-<td style="text-align: center;"><a href="#xbindkeys">xbindkeys</a>, launch (de nnn), <a href="#9menu">9menu</a>, dmenu, rofi</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Terminal</td>
-<td style="text-align: center;">lxterminal ou st, couplé au multiplexer <a href="#mtm">mtm</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">FM</td>
-<td style="text-align: center;"><a href="#nnn">nnn</a>, pcmanfm, MC</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Ed./Dev.</td>
-<td style="text-align: center;">micro, mousepad, geany, git</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Www</td>
-<td style="text-align: center;">elinks, ddgr, w3m, dillo, luakit, netsurf</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Gopher/Gemini</td>
-<td style="text-align: center;">lynx, bombadillo</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span class="citation" data-cites="mail">@mail</span></td>
-<td style="text-align: center;">alpine, aerc, gnubiff</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Pix</td>
-<td style="text-align: center;">xsiv, feh, imagemagick, scrot</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Xmedia</td>
-<td style="text-align: center;">mplayer, mpv, xine</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Sic/sound</td>
-<td style="text-align: center;">MOC, pmrp, pamix, alsamixer, qmmp</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Office</td>
-<td style="text-align: center;">micro, markdown/pandoc, wordgrinder, mupdf/zathura, diodon, calcurse, fortune</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Sys. infos/mon.</td>
-<td style="text-align: center;">htop, glances, inxi, nmon, conky</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Disques</td>
-<td style="text-align: center;">duf, ncdu, bashmount, pmount, mtp-tools, jmtps, gvfs, gparted</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Réseau</td>
-<td style="text-align: center;">nmcli/nmtui, gigolo, lftp, rclone, cadaver, wavemon, nast, cbm</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Autres</td>
-<td style="text-align: center;">suckless-tools, sct</td>
-</tr>
-</tbody>
-</table>
-<p><br />
-</p>
-<hr />
-<p><br />
-<a id="trayer"></a></p>
-<h3 id="trayer"><u>trayer :</u></h3>
-<p>Un systray simple et léger utilisable sur les bureaux qui n’en fournissent pas.<br />
-Toute la doc avec <code>man trayer</code>.<br />
-Je l’utilise avec la commande suivante, dans un script de lancement d’applications :<br />
-<code>trayer --align center --edge top --transparent true --alpha 0 --tint black --heighttype pixel --height 22 --widthtype request --SetDockType true --SetPartialStrut false &amp;</code><br />
-</p>
-<a href="#liste">Liste ↑</a><br />
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes "/>
+		<title>En mode lèger</title>
+		<style type="text/css">
+			@font-face {font-family:'pixeloid'; src:url('resources/pixeloidbold.ttf');}
+			@font-face {font-family:'3270 Nerd Font'; src:url('resources/3270NerdFont-Regular.ttf');}
+			h1 {font-family:'pixeloid';}
+		</style>
+		<link rel="stylesheet" href="resources/style.css" />
+	</head>
+	
+	<body>
+		<div class="navbar">
+			<p> <a href="napasrc.html">A casa</a> / Gérants de fenêtres</p>
+		</div>
+		<p><a id="haut"></a></p>
+		<h2 id="en-mode-léger">En mode léger</h2>
+		<aside>Dans le genre léger, là on a affaire à du lourd!</aside>
+		<p><img src="resources/feather.gif" id="profile_pic"/>&ensp;&ensp;&ensp;Plus bas, une liste d’applications que j’utilise, toujours animé par ce souci de légèreté, suivie de quelques informations sur certaines d’entre elles.<br /></p>
+		<br />
+		<p><em><b>Pourquoi du lourd?</b></em><br /></p>
+		<p>&ensp;&ensp;&ensp;Parce que bien que légères, car souvent en ligne de commande, les applications de la liste qui suit sont particulièrement puissantes.<br /></p>
+		<p><a id="liste"></a></p>
+		<table>
+			<colgroup>
+				<col style="width: 50%" />
+				<col style="width: 50%" />
+			</colgroup>
+			<thead>
+				<tr class="header">
+					<th style="text-align: center;">TYPE</th>
+					<th style="text-align: center;">APPLICATION</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="odd">
+					<td style="text-align: center;">Tray/notifier</td>
+					<td style="text-align: center;"><a href="#trayer">trayer</a>, dunst</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Lanceur</td>
+					<td style="text-align: center;"><a href="#xbindkeys">xbindkeys</a>, launch (de nnn), <a href="#9menu">9menu</a>, dmenu, rofi</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Terminal</td>
+					<td style="text-align: center;">lxterminal ou st, couplé au multiplexer <a href="#mtm">mtm</a></td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">FM</td>
+					<td style="text-align: center;"><a href="#nnn">nnn</a>, pcmanfm, MC</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Ed./Dev.</td>
+					<td style="text-align: center;">micro, mousepad, geany, git</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Www</td>
+					<td style="text-align: center;">elinks, ddgr, w3m, dillo, luakit, netsurf</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Gopher/Gemini</td>
+					<td style="text-align: center;">lynx, bombadillo</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;"><span class="citation" data-cites="mail">@mail</span></td>
+					<td style="text-align: center;">alpine, aerc, gnubiff</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Pix</td>
+					<td style="text-align: center;">xsiv, feh, imagemagick, scrot</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Xmedia</td>
+					<td style="text-align: center;">mplayer, mpv, xine</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Sic/sound</td>
+					<td style="text-align: center;">MOC, pmrp, pamix, alsamixer, qmmp</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Office</td>
+					<td style="text-align: center;">micro, markdown/pandoc, wordgrinder, mupdf/zathura, diodon, calcurse, fortune</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Sys. infos/mon.</td>
+					<td style="text-align: center;">htop, glances, inxi, nmon, conky</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Disques</td>
+					<td style="text-align: center;">duf, ncdu, bashmount, pmount, mtp-tools, jmtps, gvfs, gparted</td>
+				</tr>
+				<tr class="odd">
+					<td style="text-align: center;">Réseau</td>
+					<td style="text-align: center;">nmcli/nmtui, gigolo, lftp, rclone, cadaver, wavemon, nast, cbm</td>
+				</tr>
+				<tr class="even">
+					<td style="text-align: center;">Autres</td>
+					<td style="text-align: center;">suckless-tools, sct</td>
+				</tr>
+			</tbody>
+		</table><br />
+			<p class="points"> * * * * * * * </p>
+		
+		<p><br /><a id="trayer"></a></p>
+		<h3 id="trayer"><u>trayer :</u></h3>
+			<p>Un systray simple et léger utilisable sur les bureaux qui n’en fournissent pas.<br />
+				Toute la doc avec <code>man trayer</code>.<br />
+				Je l’utilise avec la commande suivante, dans un script de lancement d’applications :<br /></p>
+			<code>trayer --align center --edge top --transparent true --alpha 0 --tint black --heighttype pixel --height 22 --widthtype request --SetDockType true --SetPartialStrut false &amp;</code><br /></p>
+ 		<a href="#liste">Liste ↑</a><br />
+		<p class="points"> * * * * * * * </p>
 
-<hr />
-<p><br />
-<a id="xbindkeys"></a></p>
-<h3 id="xbindkeys"><u>xbindkeys :</u></h3>
-Comment appelle-t’on cela? Un gestionnaire (et daemon) de raccourcis clavier?<br />
-Très pratique, je l’utilise avec <strong>LWM</strong>, <strong>WMX</strong> et <strong>W9WM</strong>. Il est lancé dans un <em>autostart</em> et on définit les combinaisons comme cela:<br />
-
-<pre>
+		<p><br /><a id="xbindkeys"></a></p>
+		<h3 id="xbindkeys"><u>xbindkeys :</u></h3>
+			<p>Comment appelle-t’on cela? Un gestionnaire (et daemon) de raccourcis clavier?<br />
+				Très pratique, je l’utilise avec <strong>LWM</strong>, <strong>WMX</strong> et <strong>W9WM</strong>. 
+				Il est lancé dans un <em>autostart</em> et on définit les combinaisons comme cela:<br /></p>
+			<pre>
 "frankendmenu.sh"
 Mod1 +  F1
 
@@ -137,23 +127,20 @@ Mod1+shift + F1
 
 "xterm -geometry 30x30 -e /home/yirmeyah/.config/nnn/plugins/launch"
 Mod1 + F10
-</pre>
-<p><br />
-</p>
-<a href="#liste">Liste ↑</a><br />
+			</pre>
+		<a href="#liste">Liste ↑</a><br />
+		<p class="points"> * * * * * * * </p>
 
-<hr />
-<p><br />
-<a id="9menu"></a></p>
-<h3 id="menu"><u>9menu :</u></h3>
-<p>Un menu/lanceur simple et configurable, qui n’est pas spécifique à <strong>9wm</strong> ou <strong>w9wm</strong>. Les sous-menus sont possibles.<br />
-Pour l’utiliser, je crée un script que je nomme par exemple <em>9mainmenu.sh</em> :<br />
-<code> #!/bin/sh<br> 9menu -label “MAIN MENU” -warp -popdown -teleport -bg “#1A1A1A” -fg “#7F7F7F” -font “-misc-fixed-medium-r-normal-<em>-16-</em>-<em>-</em>-<em>-</em>-<em>-</em>” -file “~/monmenu.txt” </code></p>
-<br />
-Qui appelle un simple fichier texte, par exemple <em>monmenu.txt</em> :<br />
-
-<pre>
- BAT         : acpi | dmenu -i -fn 'DejaVu Sans Mono-12' -nb '#000000' -nf '#7F7F7F' -sb '#191919' -sf '#7F7F7F' 
+		<p><br /><a id="9menu"></a></p>
+		<h3 id="menu"><u>9menu :</u></h3>
+		<p>Un menu/lanceur simple et configurable, qui n’est pas spécifique à <strong>9wm</strong> ou <strong>w9wm</strong>. Les sous-menus sont possibles.<br />
+			Pour l’utiliser, je crée un script que je nomme par exemple <em>9mainmenu.sh</em> :<br /></p>
+		<code> #!/bin/sh<br> 9menu -label “MAIN MENU” -warp -popdown -teleport -bg “#1A1A1A” -fg “#7F7F7F” -font “-misc-fixed-medium-r-normal-<em>-16-</em>-<em>-</em>-<em>-</em>-<em>-</em>” -file “~/monmenu.txt” </code>
+		<br />
+		<p>Qui appelle un simple fichier texte, par exemple <em>monmenu.txt</em> :<br /></p>
+		<pre>
+ BAT         : acpi | dmenu -i -fn 'DejaVu Sans Mono-12' -nb '#000000' -nf '#7F7F7F' 
+ -sb '#191919' -sf '#7F7F7F' 
  T42NOTES    : stterm -g 75x40+80+50 -e micro ~/t42notes.txt 
  MTM         : stterm -e mtm 
  CAL         : gsimplecal 
@@ -166,45 +153,38 @@ Qui appelle un simple fichier texte, par exemple <em>monmenu.txt</em> :<br />
  LOGOUT      : loginctl terminate-session ${XDG_SESSION_ID-} 
  REBOOT      : systemctl reboot 
  SHUTDOWN    : systemctl poweroff 
-</pre>
-<br />
-Et je le lance par un raccourci clavier défini dans <em>.xbindkeysrc</em> :<br />
-
-<pre>
+		</pre>
+		<P>Et je le lance par un raccourci clavier défini dans <em>.xbindkeysrc</em> :<br /></p>
+		<pre>
  "9mainmenu.sh" 
  Mod1 + a 
-</pre>
-<p><br />
-</p>
-<a href="#liste">Liste ↑</a><br />
+		</pre>
+		<a href="#liste">Liste ↑</a><br />
+		<p class="points"> * * * * * * * </p>
 
-<hr />
-<p><br />
-<a id="mtm"></a></p>
-<h3 id="mtm"><u>mtm :</u></h3>
-<p>Un <strong>M</strong>ultiplexeur de <strong>T</strong>erminal <strong>M</strong>icro, très léger, très simple (et quelque part limité) avec très peu de raccourcis clavier.<br />
-La combinaison de base est Ctrl+g + (touche). Mais cela peut-être modifié avant compilation.<br />
-Ici le <a href="resources/mtm.1">man</a> et la <a href="https://github.com/deadpixi/mtm">Page github</a>.</p>
-<a href="#liste">Liste ↑</a><br />
+		<p><br /><a id="mtm"></a></p>
+		<h3 id="mtm"><u>mtm :</u></h3>
+			<p>Un <strong>M</strong>ultiplexeur de <strong>T</strong>erminal <strong>M</strong>icro, très léger, 
+				très simple (et quelque part limité) avec très peu de raccourcis clavier.<br />
+				La combinaison de base est Ctrl+g + (touche). Mais cela peut-être modifié avant compilation.
+				Ici le <a href="resources/mtm.1">man</a> et la <a href="https://github.com/deadpixi/mtm">Page github</a>.</p>
+		<a href="#liste">Liste ↑</a><br />
+		<p class="points"> * * * * * * * </p>
+		
+		<p><br /><a id="nnn"></a></p>
+		<h3 id="nnn"><u>nnn!!! :</u></h3>
+		<p>Un gestionnaire de fichiers, léger, rapide, puissant, configurable … fantastiquement super!
+			<a href="https://github.com/jarun/nnn">Page github</a> et ma config dans <a href="resources/nnn.txt"><code>.bashrc</code></a></p>
+		<a href="#liste">Liste ↑</a><br />
 
-<hr />
-<p><br />
-<a id="nnn"></a></p>
-<h3 id="nnn"><u>nnn!!! :</u></h3>
-<p>Un gestionnaire de fichiers, léger, rapide, puissant, configurable … fantastiquement super!<br />
-<a href="https://github.com/jarun/nnn">Page github</a>.<br />
-Ma config dans <a href="resources/nnn.txt"><code>.bashrc</code></a></p>
-<a href="#liste">Liste ↑</a><br />
-
-<hr />
-<p><br />
-<span class="points">. . . . . . . .</span></p>
-<blockquote>
-<p><a href="#haut">Vers là-bas, en haut ↑</a></p>
-</blockquote>
-<p> </p>
-<p> </p>
-<hr />
-<p><span class="footer"><em>Màj 08 juin 2023 | <a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a> - Fait avec <a href="https://github.com/eakbas/TSPW">TSPW</a>, <a href="http://pandoc.org/">pandoc</a> et amour.</em></span></p>
-</body>
+			<p><br /></p>
+			<p class="points"> * * * * * * * </p>
+			<blockquote>
+				<p><a href="#haut">Vers là-bas, en haut ↑</a></p>
+			</blockquote>
+			<p> </p>
+		<div class="footer">
+			<p><span class="date">&ensp;&ensp;&ensp;Màj 01 juin 2025</span>&ensp;&ensp;&ensp;|&ensp;&ensp;&ensp;<em><a href="https://yrmyah.github.com/napasrc.html">.ñapasrc</a>&ensp;&ensp;&ensp;-&ensp;&ensp;&ensp;Fait à l'ancienne et avec <span style="font-family:'3270 Nerd Font';"></span> , en s'inspirant de <a href="http://bettermotherfuckingwebsite.com/">ça</a>.</em></p>
+		</div>
+	</body>
 </html>
